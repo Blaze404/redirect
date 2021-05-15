@@ -3,7 +3,7 @@ import requests
 s = sched.scheduler(time.time, time.sleep)
 def do_something(sc): 
     # print("Doing stuff...")
-    requests.get('http://103.142.174.170:8000/ping/')
+    requests.get('http://103.142.174.170:80/ping/')
     # do your stuff
     s.enter(120, 1, do_something, (sc,))
 
